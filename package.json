@@ -1,0 +1,19 @@
+{
+  "name": "ourvoiceusa-sdk-js",
+  "version": "1.0.0",
+  "description": "Javascript Software Development Kit to talk to OurVoiceUSA APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OurVoiceUSA/ourvoiceusa-sdk-js.git"
+  },
+  "author": "OurVoiceUSA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OurVoiceUSA/ourvoiceusa-sdk-js/issues"
+  },
+  "homepage": "https://github.com/OurVoiceUSA/ourvoiceusa-sdk-js#readme"
+}
