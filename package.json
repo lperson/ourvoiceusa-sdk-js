@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/OurVoiceUSA/ourvoiceusa-sdk-js/issues"
   },
-  "homepage": "https://github.com/OurVoiceUSA/ourvoiceusa-sdk-js#readme"
+  "homepage": "https://github.com/OurVoiceUSA/ourvoiceusa-sdk-js#readme",
+  "dependencies": {
+    "point-in-polygon": "^1.0.1"
+  }
 }
