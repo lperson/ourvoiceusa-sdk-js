@@ -1,8 +1,11 @@
 
 // transform a geojson file into an array of polygons
 
-exports.geojson2polygons = (str, flag) => {
-  let json = JSON.parse(str);
+var geojson2polygons = function (str, flag) {
+  return geojsonobj2polygons(JSON.parse(str), flag);
+}
+
+var geojsonobj2polygons = function (json, flag) {
 
   // default lng/lat to short names
   let lng = "lng";
@@ -43,4 +46,7 @@ exports.geojson2polygons = (str, flag) => {
 
   return polygons;
 }
+
+exports.geojsonobj2polygons = geojsonobj2polygons;
+exports.geojson2polygons = geojson2polygons;
 
