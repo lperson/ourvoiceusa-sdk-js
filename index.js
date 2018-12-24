@@ -1,5 +1,5 @@
 
-const us_states = {
+var us_states = {
     "AL": "Alabama",
     "AK": "Alaska",
     "AS": "American Samoa",
