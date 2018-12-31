@@ -126,7 +126,12 @@ var geojson2polygons = function (json, flag) {
   return polygons;
 }
 
+var asyncForEach = async function (a, c) {
+  for (let i = 0; i < a.length; i++) await c(a[i], i, a);
+}
+
 exports.us_states = us_states;
 exports.ingeojson = ingeojson;
 exports.geojson2polygons = geojson2polygons;
+exports.asyncForEach = asyncForEach;
 
