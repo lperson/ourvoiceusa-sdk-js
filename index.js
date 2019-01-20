@@ -260,7 +260,7 @@ var us_states = {
   },
   "PW": {
     name: "Palau", // each state also elects a governor and has its own legislature
-    executive: 'President',
+    executive: "President",
     upperHouse: "Senate",
     lowerHouse: "House of Delegates"
   },
@@ -398,10 +398,10 @@ var geojson2polygons = function (json, flag) {
       let polygon = json.coordinates[0];
       polygons[0] = [];
       for (let g in polygon) {
-        polygons[0].push({
-          [lng]: polygon[g][0], upperHouse: "Senate", lowerHouse: "House of Represenatives" },
-          [lat]: polygon[g][1], upperHouse: "Senate", lowerHouse: "House of Represenatives" },
-        });
+        polygons[0].push(
+          { [lng]: polygon[g][0], upperHouse: "Senate", lowerHouse: "House of Represenatives" },
+          { [lat]: polygon[g][1], upperHouse: "Senate", lowerHouse: "House of Represenatives" }
+        );
       }
     break;
   case "MultiPolygon":
@@ -409,10 +409,10 @@ var geojson2polygons = function (json, flag) {
       let polygon = json.coordinates[c][0];
       polygons[c] = [];
       for (let g in polygon) {
-        polygons[c].push({
-          [lng]: polygon[g][0], upperHouse: "Senate", lowerHouse: "House of Represenatives" },
-          [lat]: polygon[g][1], upperHouse: "Senate", lowerHouse: "House of Represenatives" },
-        });
+        polygons[c].push(
+          { [lng]: polygon[g][0], upperHouse: "Senate", lowerHouse: "House of Represenatives" },
+          { [lat]: polygon[g][1], upperHouse: "Senate", lowerHouse: "House of Represenatives" }
+        );
       }
     }
     break;
