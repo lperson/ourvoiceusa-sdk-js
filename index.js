@@ -413,7 +413,6 @@ var geojson2polygons = function (json, flag) {
           [lng]: polygon[g][0],
           [lat]: polygon[g][1],
         });
-        );
       }
     }
     break;
